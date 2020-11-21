@@ -1,12 +1,26 @@
 package com.example.project_p7;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebChromeClient;
+import android.webkit.WebResourceRequest;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.widget.SearchView;
+
+import org.jetbrains.annotations.Nullable;
+
+import kotlin.jvm.internal.Intrinsics;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -24,10 +38,16 @@ public class NoticiasCovidFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
+    private MainActivity myMainActivity;
+
     public NoticiasCovidFragment() {
         // Required empty public constructor
     }
 
+    public NoticiasCovidFragment(MainActivity myMainActivity) {
+        // Required empty public constructor
+        this.myMainActivity = myMainActivity;
+    }
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
@@ -53,6 +73,7 @@ public class NoticiasCovidFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
@@ -60,5 +81,53 @@ public class NoticiasCovidFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_noticias_covid, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @androidx.annotation.Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        SwipeRefreshLayout swipeRefreshLayout = (SwipeRefreshLayout) getView().findViewById(R.id.swipeRefresh);
+        WebView webView = (WebView) getView().findViewById(R.id.webView);
+
+        webView.setWebChromeClient((WebChromeClient)(new WebChromeClient() {
+        }));
+
+        Intrinsics.checkNotNullExpressionValue(webView, "webView");
+        webView.setWebViewClient((WebViewClient)(new WebViewClient() {
+            public boolean shouldOverrideUrlLoading(@Nullable WebView view, @Nullable WebResourceRequest request) {
+                return super.shouldOverrideUrlLoading(view, request);
+            }
+
+            public void onPageStarted(@Nullable WebView view, @Nullable String url, @Nullable Bitmap favicon) {
+                super.onPageStarted(view, url, favicon);
+                SwipeRefreshLayout swipeRefreshLayout = (SwipeRefreshLayout) getView().findViewById(R.id.swipeRefresh);
+                Intrinsics.checkNotNullExpressionValue(swipeRefreshLayout, "swipeRefresh");
+                swipeRefreshLayout.setRefreshing(true);
+            }
+
+            public void onPageFinished(@Nullable WebView view, @Nullable String url) {
+                super.onPageFinished(view, url);
+                SwipeRefreshLayout swipeRefreshLayout = (SwipeRefreshLayout) getView().findViewById(R.id.swipeRefresh);
+                Intrinsics.checkNotNullExpressionValue(swipeRefreshLayout, "swipeRefresh");
+                swipeRefreshLayout.setRefreshing(false);
+            }
+        }));
+        webView = (WebView) getView().findViewById(R.id.webView);
+        Intrinsics.checkNotNullExpressionValue(webView, "webView");
+        WebSettings var3 = webView.getSettings();
+        Intrinsics.checkNotNullExpressionValue(var3, "webView.settings");
+        WebSettings settings = var3;
+        settings.setJavaScriptEnabled(true);
+        ((WebView) getView().findViewById(R.id.webView)).loadUrl("https://www.google.com/search?q=noticias+covid&rlz=1C1CHBD_esES859ES859&sxsrf=ALeKk02wZuZVQIOQ9p1z1NPVaFTxgEuIfQ:1605966711439&source=lnms&tbm=nws&sa=X&ved=2ahUKEwiNweya5JPtAhUaURUIHYGPAzoQ_AUoAXoECAgQAw&biw=1920&bih=937");
+
+        WebView finalWebView = webView;
+        swipeRefreshLayout.setOnRefreshListener(
+                new SwipeRefreshLayout.OnRefreshListener() {
+                    @Override
+                    public void onRefresh() {
+                        ((WebView) getView().findViewById(R.id.webView)).loadUrl("https://www.google.com/search?q=noticias+covid&rlz=1C1CHBD_esES859ES859&sxsrf=ALeKk02wZuZVQIOQ9p1z1NPVaFTxgEuIfQ:1605966711439&source=lnms&tbm=nws&sa=X&ved=2ahUKEwiNweya5JPtAhUaURUIHYGPAzoQ_AUoAXoECAgQAw&biw=1920&bih=937");
+                    }
+                });
     }
 }
