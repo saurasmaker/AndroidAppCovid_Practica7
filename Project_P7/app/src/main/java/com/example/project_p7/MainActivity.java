@@ -1,19 +1,15 @@
 package com.example.project_p7;
 
-import android.os.Bundle;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-import com.google.android.material.tabs.TabLayout;
-
-import androidx.viewpager.widget.ViewPager;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.viewpager2.widget.ViewPager2;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
+import com.google.android.material.tabs.TabLayoutMediator.TabConfigurationStrategy;
 
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-
-import com.example.project_p7.ui.main.SectionsPagerAdapter;
+import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,19 +17,32 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
-        ViewPager viewPager = findViewById(R.id.view_pager);
-        viewPager.setAdapter(sectionsPagerAdapter);
-        TabLayout tabs = findViewById(R.id.tabs);
-        tabs.setupWithViewPager(viewPager);
-        FloatingActionButton fab = findViewById(R.id.fab);
 
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        ViewPager2 viewPager2 = (ViewPager2) findViewById(R.id.viewPager2Main);
+        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), getLifecycle());
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayoutMain);
+
+        viewPagerAdapter.addFragment(new SintomasFragment());
+        viewPagerAdapter.addFragment(new ComoActuarFragment());
+        viewPagerAdapter.addFragment(new NoticiasCovidFragment());
+
+        viewPager2.setAdapter(viewPagerAdapter);
+
+        new TabLayoutMediator(tabLayout, viewPager2,
+                new TabLayoutMediator.TabConfigurationStrategy() {
+                    @Override public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
+                        switch (position){
+                            case 0:
+                                tab.setText("Síntomas");
+                                break;
+                            case 1:
+                                tab.setText("Cómo Actuar");
+                                break;
+                            case 2:
+                                tab.setText("Noticias Covid 19");
+                                break;
+                        }
+                    }
+                }).attach();
     }
 }
