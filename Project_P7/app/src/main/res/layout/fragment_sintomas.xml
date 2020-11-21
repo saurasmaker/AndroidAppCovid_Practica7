@@ -10,7 +10,7 @@
     <!-- TODO: Update blank fragment layout -->
 
     <ScrollView
-        android:id="@+id/scrollView3"
+        android:id="@+id/scrollView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -22,7 +22,6 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:id="@+id/layoutSintomas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -33,30 +32,30 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="236dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
                     <CheckBox
                         android:layout_width="match_parent"
-                        android:layout_height="31dp"
-                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
                         android:text="CheckBox" />
 
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
                         android:text="TextView" />
 
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="1dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    tools:src="@tools:sample/avatars" />
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/ic_launcher_foreground"
+                    app:srcCompat="@android:drawable/btn_star_big_on" />
 
             </LinearLayout>
 
@@ -66,30 +65,30 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="236dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
                     <CheckBox
                         android:layout_width="match_parent"
-                        android:layout_height="31dp"
-                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
                         android:text="CheckBox" />
 
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
                         android:text="TextView" />
 
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="1dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    tools:src="@tools:sample/avatars" />
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/ic_launcher_foreground"
+                    app:srcCompat="@android:drawable/btn_star_big_on" />
 
             </LinearLayout>
 
@@ -99,30 +98,30 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="236dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
                     <CheckBox
                         android:layout_width="match_parent"
-                        android:layout_height="31dp"
-                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
                         android:text="CheckBox" />
 
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
                         android:text="TextView" />
 
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="1dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    tools:src="@tools:sample/avatars" />
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/ic_launcher_foreground"
+                    app:srcCompat="@android:drawable/btn_star_big_on" />
 
             </LinearLayout>
 
@@ -132,30 +131,30 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="236dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
                     <CheckBox
                         android:layout_width="match_parent"
-                        android:layout_height="31dp"
-                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
                         android:text="CheckBox" />
 
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
                         android:text="TextView" />
 
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="1dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    tools:src="@tools:sample/avatars" />
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/ic_launcher_foreground"
+                    app:srcCompat="@android:drawable/btn_star_big_on" />
 
             </LinearLayout>
 
@@ -165,30 +164,30 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="236dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
                     <CheckBox
                         android:layout_width="match_parent"
-                        android:layout_height="31dp"
-                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
                         android:text="CheckBox" />
 
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
                         android:text="TextView" />
 
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="1dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    tools:src="@tools:sample/avatars" />
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/ic_launcher_foreground"
+                    app:srcCompat="@android:drawable/btn_star_big_on" />
 
             </LinearLayout>
 
@@ -198,30 +197,228 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="236dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
                     <CheckBox
                         android:layout_width="match_parent"
-                        android:layout_height="31dp"
-                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
                         android:text="CheckBox" />
 
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
                         android:text="TextView" />
 
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="1dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/ic_launcher_foreground"
+                    app:srcCompat="@android:drawable/btn_star_big_on" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    tools:src="@tools:sample/avatars" />
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CheckBox" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/ic_launcher_foreground"
+                    app:srcCompat="@android:drawable/btn_star_big_on" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CheckBox" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/ic_launcher_foreground"
+                    app:srcCompat="@android:drawable/btn_star_big_on" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CheckBox" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/ic_launcher_foreground"
+                    app:srcCompat="@android:drawable/btn_star_big_on" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CheckBox" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/ic_launcher_foreground"
+                    app:srcCompat="@android:drawable/btn_star_big_on" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CheckBox" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/ic_launcher_foreground"
+                    app:srcCompat="@android:drawable/btn_star_big_on" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CheckBox" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/ic_launcher_foreground"
+                    app:srcCompat="@android:drawable/btn_star_big_on" />
 
             </LinearLayout>
 
@@ -238,9 +435,9 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/CHECK"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/buttonCheck"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
             android:text="CHECK"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

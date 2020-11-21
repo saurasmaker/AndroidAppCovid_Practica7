@@ -2,4 +2,11 @@
     <string name="app_name">Project_P7</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="informaci_n_sobre_tus_sintomas_de_covid_19_nes_probable_que_tengas_covid_asi_que_ni_se_te_ocurra_salir_de_tu_puta_casa_a_no_ser_que_sea_para_ir_a_un_hospital">Información sobre tus sintomas de COVID 19. \nEs probable que tengas COVID, ASI QUE NI SE TE OCURRA SALIR DE TU PUTA CASA A NO SER QUE SEA PARA IR A UN HOSPITAL.</string>
+    <string name="c_mo_actuar">Cómo Actuar</string>
+    <string name="hospital_m_s_cercano">Hospital más cercano</string>
+    <string name="llamar_a_emergencias">Llamar a emergencias</string>
+    <string name="salir">Salir</string>
+    <string name="imagen_que_muestra_de_forma_gr_fica_si_el_paciente_es_posible_covid_o_no">Imagen que muestra de forma gráfica si el paciente es posible covid o no.</string>
+    <string name="descripcion_de_la_imagen_sintoma_1">Descripcion de la imagen Sintoma 1</string>
 </resources>
