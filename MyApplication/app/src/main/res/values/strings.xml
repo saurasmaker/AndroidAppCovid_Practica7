@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="conjuntivitis">Conjuntivitis</string>
+    <string name="diarrea">Diarrea</string>
+    <string name="dolor_de_garganta">Dolor de garganta</string>
+    <string name="button">Button</string>
+    <string name="p_rdida_del_sentido_del_olfato_y_o_del_gusto">Pérdida del sentido del olfato y/o del gusto</string>
+    <string name="dolor_de_cabeza">Dolor de cabeza</string>
+    <string name="molestias_y_dolores">Molestias y dolores</string>
+    <string name="cansancio">Cansancio</string>
+    <string name="tos_seca">Tos seca</string>
+    <string name="fiebre">Fiebre</string>
+    <string name="dificultad_para_respirar_y_o_sensaci_n_de_falta_de_aire">Dificultad para respirar y/o sensación de falta de aire</string>
+    <string name="erupciones_cut_neas_o_p_rdida_del_color_en_los_dedos_de_las_manos_y_o_de_los_pies">Erupciones cutáneas o pérdida del color en los dedos de las manos y/o de los pies</string>
+    <string name="graves">Graves</string>
+    <string name="poco_comunes">Poco comunes</string>
+    <string name="dolor_o_presi_n_en_el_pecho">Dolor o presión en el pecho</string>
+    <string name="habituales">Habituales</string>
+    <string name="incapacidad_de_hablar_o_moverse">Incapacidad de hablar o moverse</string>
+    <string name="todo">TODO</string>
+    <string name="check">Check</string>
+    <string name="info">info</string>
+    <string name="llamar_a_emergencias">llamar a emergencias</string>
+    <string name="hospital_m_s_cercano">hospital más cercano</string>
+    <string name="c_mo_actuar">cómo actuar</string>
+    <string name="salir">salir</string>
+    <string name="si_presentas_s_ntomas_graves_busca_atenci_n_m_dica_inmediata_sin_embargo_siempre_debes_llamar_a_tu_doctor_o_centro_de_atenci_n_sanitaria_antes_de_presentarte_en_el_lugar_en_cuesti_n_lo_recomendable_es_que_las_personas_que_sufran_s_ntomas_leves_y_tengan_un_buen_estado_de_salud_general_se_confinen_en_casa_de_media_las_personas_que_se_contagian_empiezan_a_presentar_s_ntomas_en_un_plazo_de_5_a_6_d_as_desde_que_se_infectan_pero_pueden_tardar_hasta_14">Si presentas síntomas graves, busca atención médica inmediata. Sin embargo, siempre debes llamar a tu doctor o centro de atención sanitaria antes de presentarte en el lugar en cuestión. Lo recomendable es que las personas que sufran síntomas leves y tengan un buen estado de salud general se confinen en casa. De media, las personas que se contagian empiezan a presentar síntomas en un plazo de 5 a 6 días desde que se infectan, pero pueden tardar hasta 14.</string>
+    <string name="si_presentas_s_ntomas_graves_busca_atenci_n_m_dica_inmediata_sin_embargo_siempre_debes_llamar_a_tu_doctor_o_centro_de_atenci_n_sanitaria_antes_de_presentarte_en_el_lugar_en_cuesti_n">Si presentas síntomas graves, busca atención médica inmediata. Sin embargo, siempre debes llamar a tu doctor o centro de atención sanitaria antes de presentarte en el lugar en cuestión.</string>
+    <string name="lo_recomendable_es_que_las_personas_que_sufran_s_ntomas_leves_y_tengan_un_buen_estado_de_salud_general_se_confinen_en_casa">Lo recomendable es que las personas que sufran síntomas leves y tengan un buen estado de salud general se confinen en casa.</string>
+    <string name="de_media_las_personas_que_se_contagian_empiezan_a_presentar_s_ntomas_en_un_plazo_de_5_a_6_d_as_desde_que_se_infectan_pero_pueden_tardar_hasta_14">De media, las personas que se contagian empiezan a presentar síntomas en un plazo de 5 a 6 días desde que se infectan, pero pueden tardar hasta 14.</string>
+    <string name="hospital_mas_cercano">Hospital mas cercano</string>
+</resources>
